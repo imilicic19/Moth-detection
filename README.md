@@ -7,10 +7,9 @@ Problem u ovom zadatku predstavlja detekcija i brojanje Stenoma catenifer vrste 
 
 
 Koraci:
-  1. skinuti EU moths bazu podataka, proanalizirati je (broj klasa, rezolucija slika, raspodela slika)
-  2. labeliranje u LabelMe softveru
+  1. skinuti EU moths bazu podataka, proanalizirati je (broj klasa, rezolucija slika, balansiranost baze podataka)
+  2. labeliranje (automatsko), GroundingDino
   3. konverzija labela iz .JSON formata u .TXT kako bismo mogli da primenimo YOLO model
-  4. uzimamo YOLO model jer smo ograniceni podacima (za transformer-based modele kao sto je DETR nam treba vise podataka)
-  5. primenicemo augmentaciju tokom treninga (online) kako bismo obezbedili prilagodjenje modela na moguce varijabilnosti u realnim situacijama
-  6. nakon treniranja testiracemo na par slika moljaca iz test grupe, kao i na par referentnih primera Stenoma catenifer da vidimo da li je lokalizacija uspesna. Prepoznavanje sigurno nece biti jer takvu klasu model nije video.
+  4. primenicemo augmentaciju tokom treninga (online) kako bismo obezbedili prilagodjenje modela na moguce varijabilnosti u realnim situacijama
+  5. nakon treniranja testiracemo na par slika moljaca iz test grupe, kao i na par referentnih primera Stenoma catenifer da vidimo da li je lokalizacija uspesna. Prepoznavanje sigurno nece biti jer takvu klasu model nije video.
 
