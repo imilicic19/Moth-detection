@@ -1,7 +1,6 @@
 # Seed Moth Detection (Proof of Concept)
 
 This repository contains a proof-of-concept for detecting moths in pheromone trap images using a YOLO-based model.
-The goal is to demonstrate a viable approach under limited labeled data conditions.
 
 ## Project Structure
 
@@ -38,13 +37,21 @@ cd <repo-name>
 pip install -r requirements.txt
 ```
 
+## Usage
+
+Run inference on a sample image:
+
+```bash
+python src/predict.py --image test_data_samples/example.jpg
+```
+
+Predictions will be saved automatically.
+
 ## Hardware
 
 * The code supports both CPU and GPU execution
 * If a CUDA-enabled GPU is available, it will be used automatically
 * Otherwise, the code runs on CPU (slower performance)
-
----
 
 ## Data
 
