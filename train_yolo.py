@@ -1,5 +1,8 @@
 from ultralytics import YOLO
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Using device: {device}")
+
 model = YOLO("yolo26n.pt")  
 
 model.train(
@@ -8,6 +11,7 @@ model.train(
     imgsz=640,
     batch=16,
     pretrained = True,
+    device = device,
 
     lr0=0.0005,
     weight_decay=0.00088,
