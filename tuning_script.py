@@ -1,5 +1,7 @@
 from ultralytics import YOLO
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Using device: {device}")
 trainable_model = YOLO('yolo26n.pt')
 
 # Define search space
@@ -26,5 +28,6 @@ trainable_model.tune(
     space=search_space,
     plots=False,
     save=False,
-    val=False
+    val=False,
+    device=device
 )
