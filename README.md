@@ -37,16 +37,6 @@ cd <repo-name>
 pip install -r requirements.txt
 ```
 
-## Usage
-
-Run inference on a sample image:
-
-```bash
-python src/predict.py --image test_data_samples/example.jpg
-```
-
-Predictions will be saved automatically.
-
 ## Hardware
 
 * The code supports both CPU and GPU execution
@@ -59,5 +49,5 @@ Due to size limitations, the full dataset is not included.
 
 The model was trained using:
 
-* EU Moths dataset
-* AMI dataset
+* EU Moths dataset (Korsch, D., Bodesheim, P., and Denzler, J. (2021). Deep Learning Pipeline for Automated Visual Moth Monitoring. INFORMATIK 2021, CS4Biodiversity Workshop, pp. 443–460. DOI: 10.18420/informatik2021-036)
+* AMI dataset ( https://doi.org/10.5281/zenodo.12554005)
