@@ -32,8 +32,8 @@ This repository contains a proof-of-concept for detecting moths in pheromone tra
 Clone the repository and install dependencies:
 
 ```bash
-git clone <repo-link>
-cd <repo-name>
+git clone https://github.com/imilicic19/Moth-detection.git
+cd Moth-detection
 pip install -r requirements.txt
 ```
 
